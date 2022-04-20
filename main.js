@@ -131,3 +131,15 @@ function noSpace(x) {
 }
 
 
+//Merge two sorted arrays into one 
+function mergeArrays(arr1, arr2) {
+    //take two sorted arrays 
+    //merge them together into one single array
+    let mergedArray = arr1.concat(arr2)
+
+    const unique = [...new Set(mergedArray)]
+
+
+    //sort the array in asencding order 
+    return unique.sort((a, b) => a - b)
+}
