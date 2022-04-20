@@ -143,3 +143,19 @@ function mergeArrays(arr1, arr2) {
     //sort the array in asencding order 
     return unique.sort((a, b) => a - b)
 }
+
+
+//To square(root) or not to square(root)
+function squareOrSquareRoot(array) {
+    //getting an integer array
+    return array.map((num) => {
+        if (Math.sqrt(num) % 1 === 0) {
+            return Math.sqrt(num)
+        } else {
+            return Math.pow(num, 2)
+        }
+
+    })
+    //returning a new array if number has a square root, print otherwise sqare the numbe
+
+}
