@@ -96,6 +96,34 @@ function bmi(weight, height) {
 }
 
 
+/*
+Build a function that returns an array of integers from n to 1 where n>0.
+
+Example : n=5 --> [5,4,3,2,1]
+
+*/
+const reverseSeq = n => {
+    let answer = []
+
+
+    for (let i = n; i > 0; i--) {
+        answer.push(i)
+    }
+
+    return answer
+}
+
+
+//This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+function simpleMultiplication(number) {
+    // your code........
+
+    if (number % 2 === 0) {
+        return number * 8
+    } else {
+        return number * 9
+    }
+}
 
 
 
