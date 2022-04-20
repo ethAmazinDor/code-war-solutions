@@ -157,5 +157,16 @@ function squareOrSquareRoot(array) {
 
     })
     //returning a new array if number has a square root, print otherwise sqare the numbe
-
 }
+
+
+//A Needle in the Haystack
+function findNeedle(haystack) {
+    // take in an array 
+    return 'found needle in position ' + haystack.indexOf('needle')
+    //look through the array for the word 'needle'
+
+    //return the needle and the position it's in 
+}
+
+
