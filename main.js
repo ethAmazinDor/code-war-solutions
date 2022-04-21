@@ -201,9 +201,14 @@ function monkeyCount(n) {
         //pushing the numbers into the fullNum array 
         fullNum.push(i)
     }
-
-
     return fullNum
+}
+
+//Check same case 
+function sameCase(a, b) {
+    if (a == '' && b == '') {
+        return 1
+    }
 
 
 }
