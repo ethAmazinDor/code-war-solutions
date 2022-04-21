@@ -223,5 +223,16 @@ function well(x) {
 
     return good ? 'Publish!' : 'Fail'
 
+}
+
+//Square(n)sum
+function squareSum(numbers) {
+    //take in an array of numbers 
+
+    let squaredNums = numbers.map(num => Math.pow(num, 2))
+    // square each number
+
+    return squaredNums.reduce((sum, current) => sum + current, 0)
+    //add the sum of the squared numbers together 
 
 }
