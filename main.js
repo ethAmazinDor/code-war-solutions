@@ -204,11 +204,24 @@ function monkeyCount(n) {
     return fullNum
 }
 
-//Check same case 
-function sameCase(a, b) {
-    if (a == '' && b == '') {
-        return 1
-    }
+//you only need one - beginner
+function check(a, x) {
+    //take in an array with a value 
+    // check wheter the array contains x 
+
+    return a.includes(x)
+    //return true if it does vice versa 
+}
+
+//Well of Ideas 
+function well(x) {
+    let good = 0
+
+    for (let i = 0; i < x.length; ++i)
+        if (x[i] == 'good' && ++good > 2)
+            return 'I smell a series!'
+
+    return good ? 'Publish!' : 'Fail'
 
 
 }
