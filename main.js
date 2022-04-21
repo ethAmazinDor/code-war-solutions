@@ -174,6 +174,19 @@ function findNeedle(haystack) {
 function digitize(n) {
     //code here
 
-    return n.reverse()
+    let myFunc = n => Number(n)
+
+    let reversedNums = Array.from(String(n), myFunc)
+
+    return reversedNums.reverse()
+
+}
+
+//Sum Mixed Array
+function sumMix(x) {
+    //take in an array of integers of strings and numbers 
+    let newArr = x.map(n => Number(n))
+    //return sum of array 
+    return newArr
 }
 
