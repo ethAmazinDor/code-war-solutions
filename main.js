@@ -187,6 +187,23 @@ function sumMix(x) {
     //take in an array of integers of strings and numbers 
     let newArr = x.map(n => Number(n))
     //return sum of array 
-    return newArr
+
+    return newArr.reduce((acc, c) => acc + c, 0)
 }
 
+//Count the Monkeys!
+function monkeyCount(n) {
+    //populate an array with numbers
+    let fullNum = []
+
+    //for loop goes through the number and increments up to it
+    for (let i = 1; i <= n; i++) {
+        //pushing the numbers into the fullNum array 
+        fullNum.push(i)
+    }
+
+
+    return fullNum
+
+
+}
