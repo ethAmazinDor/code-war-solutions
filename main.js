@@ -236,3 +236,22 @@ function squareSum(numbers) {
     //add the sum of the squared numbers together 
 
 }
+
+//fake binary 
+function fakeBin(x) {
+    //take in a string of digits 
+    let newArr = x.split('')
+    //replace any digits below 5 with 0
+
+    return newArr.map(num => {
+        if (num < 5) {
+            return '0'
+        } else {
+            return '1'
+        }
+    }).join()
+    //replace any digit above 5 with 1 
+
+
+}
+
