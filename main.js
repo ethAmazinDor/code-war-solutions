@@ -302,3 +302,28 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
         return false
     }
 };
+
+//vowel count 
+function getCount(str) {
+    //a place to store the count of vowels 
+
+    let vowels = 0
+
+    //iterate over the string 
+    for (let i = 0; i < str.length; i++) {
+        const vowelLetter = str[i]
+        //if letter is a vowel store it in count
+        if (vowelLetter === 'a' ||
+            vowelLetter === 'i' ||
+            vowelLetter === 'e' ||
+            vowelLetter === 'o' ||
+            vowelLetter === 'u') {
+            vowels++
+        }
+
+    }
+    return vowels;
+
+    //return count 
+
+}
