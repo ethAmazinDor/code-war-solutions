@@ -252,6 +252,14 @@ function fakeBin(x) {
     }).join('')
     //replace any digit above 5 with 1 
 
+}
+
+//sum of two lowest positives
+function sumTwoSmallestNumbers(numbers) {
+    //take in an array 
+    numbers = numbers.sort((a, b) => a - b, 0)
+
+    return numbers[0] + numbers[1]
 
 }
 
