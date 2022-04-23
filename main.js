@@ -348,3 +348,11 @@ class Kata {
 function checkForFactor(base, factor) {
     return base % factor === 0
 }
+
+//beginner series #4 Cockroach
+function cockroachSpeed(s) {
+    //Good Luck!
+    let cmph = s * 27.7778
+
+    return Math.floor(cmph)
+}
