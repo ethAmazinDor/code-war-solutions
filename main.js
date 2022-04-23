@@ -336,3 +336,10 @@ function setAlarm(employed, vacation) {
         return false
     }
 }
+
+//volume of a cuboid 
+class Kata {
+    static getVolumeOfCuboid(length, width, height) {
+        return length * width * height
+    }
+}
