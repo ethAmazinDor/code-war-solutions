@@ -249,7 +249,7 @@ function fakeBin(x) {
         } else {
             return '1'
         }
-    }).join()
+    }).join('')
     //replace any digit above 5 with 1 
 
 
