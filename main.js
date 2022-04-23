@@ -343,3 +343,8 @@ class Kata {
         return length * width * height
     }
 }
+
+//Grasshopper- check for factor 
+function checkForFactor(base, factor) {
+    return base % factor === 0
+}
