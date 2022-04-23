@@ -263,3 +263,22 @@ function sumTwoSmallestNumbers(numbers) {
 
 }
 
+//Printer Errors 
+function printerError(s) {
+    //a place to store the number of errors 
+    let errors = 0;
+
+    //iterate over the string 
+    for (let i = 0; i < s.length; i++) {
+        const currentLetter = s[i]
+        //if current letter is not within the range of a-m
+        if (currentLetter < 'a' || currentLetter > 'm') {
+            //increment error count 
+            errors++;
+        }
+    }
+    console.log(`${errors}/${s.length}`)
+
+    //return the errors 
+}
+
