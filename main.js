@@ -292,3 +292,13 @@ function highAndLow(numbers) {
     return `${sortedArr[sortedArr.length - 1]} ${sortedArr[0]}`
 }
 
+//Will you make it ?
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    let amountOfGallon = mpg * fuelLeft
+
+    if (amountOfGallon >= distanceToPump) {
+        return true
+    } else {
+        return false
+    }
+};
