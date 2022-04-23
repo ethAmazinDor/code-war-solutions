@@ -282,3 +282,13 @@ function printerError(s) {
     //return the errors 
 }
 
+//Highest and Lowest 
+function highAndLow(numbers) {
+    let strArr = numbers.split(' ')
+
+    //sort the string from lowest to highest 
+    sortedArr = strArr.sort((a, b) => a - b, 0)
+    // return the lwest and highest number with the higesht being the first 
+    return `${sortedArr[sortedArr.length - 1]} ${sortedArr[0]}`
+}
+
