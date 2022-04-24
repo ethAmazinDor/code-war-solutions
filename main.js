@@ -356,3 +356,14 @@ function cockroachSpeed(s) {
 
     return Math.floor(cmph)
 }
+
+//square every digit 
+function squareDigits(num) {
+
+    //convert num to a string
+    num = num.toString().split('')
+    //square each number 
+    squaredNum = num.map(x => Math.pow(x, 2)).join('')
+    //return the squared number 
+    return Number(squaredNum)
+}
