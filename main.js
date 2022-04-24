@@ -386,3 +386,21 @@ function solution(str) {
     return str.split('').reverse().join('')
 
 }
+
+//shortest word 
+function findShort(s) {
+    let words = s.split(' ')
+
+    let shortest = words.reduce((shortWord, currentWord) => {
+        if (currentWord.length < shortWord.length) {
+            return currentWord
+        } else {
+            return shortWord
+        }
+    }, words[0])
+
+    return shortest.length
+    //iterate over the string 
+    //get the length of 
+
+}
