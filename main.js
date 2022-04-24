@@ -367,3 +367,14 @@ function squareDigits(num) {
     //return the squared number 
     return Number(squaredNum)
 }
+
+//descending order 
+function descendingOrder(n) {
+    //convert number into a string 
+    let newArr = n.toString().split('')
+
+    //sort the string 
+
+    return Number(newArr.sort((a, z) => z - a).join(''))
+
+}
