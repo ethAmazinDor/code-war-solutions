@@ -421,3 +421,11 @@ function strCount(str, letter) {
 
     //return the count 
 }
+
+//SUM OF TWO LOWEST POSITIVE INTEGERS
+function sumTwoSmallestNumbers(numbers) {
+    //sort the array from smallest to largest 
+    let sortedArr = numbers.sort((a, b) => a - b)
+    // add the first two elements in the array 
+    return sortedArr[0] + sortedArr[1]
+}
