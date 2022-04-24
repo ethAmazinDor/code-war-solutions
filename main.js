@@ -429,3 +429,18 @@ function sumTwoSmallestNumbers(numbers) {
     // add the first two elements in the array 
     return sortedArr[0] + sortedArr[1]
 }
+
+//FRIEND OR FOE 
+function friend(friends) {
+    let friendsArr = []
+    //iterate thorugh the string 
+    for (let i = 0; i < friends.length; i++) {
+        const friendsName = friends[i]
+        //if friends name length is 4 return it in the array 
+        if (friendsName.length === 4) {
+            friendsArr.push(friendsName)
+        }
+    }
+    return friendsArr
+}
+
