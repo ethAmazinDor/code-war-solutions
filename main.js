@@ -378,3 +378,11 @@ function descendingOrder(n) {
     return Number(newArr.sort((a, z) => z - a).join(''))
 
 }
+
+//reverse string 
+function solution(str) {
+    //take in a string and reverse it
+
+    return str.split('').reverse().join('')
+
+}
