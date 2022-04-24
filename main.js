@@ -404,3 +404,20 @@ function findShort(s) {
     //get the length of 
 
 }
+
+
+//all star coding challenge 
+function strCount(str, letter) {
+    //place to store count of letters 
+    let count = 0;
+    //iterate over the string 
+    for (let i = 0; i < str.length; i++) {
+        // check the string for how many times letter shows up 
+        if (str[i] === letter) {
+            count++
+        }
+    }
+    return count
+
+    //return the count 
+}
