@@ -467,14 +467,20 @@ function litres(time) {
 }
 
 //MAKE A FUNCTION THAT DOES ARITHMETIC
-const arithmetic = (a, b, operator) => {
-    const functions = {
-        'add': (a, b) => a + b,
-        'subtract': (a, b) => a - b,
-        'multiply': (a, b) => a * b,
-        'divide': (a, b) => a / b,
-    };
-
-    return functions[operator](a, b)
-
+function arithmetic(a, b, operator) {
+    switch (operator) {
+        case 'add':
+            return a + b;
+        case 'subtract':
+            return a - b;
+        case 'multiply':
+            return a * b;
+        case 'divide':
+            return a / b;
+    }
 }
+
+//SORT ARRAY BY STRING LENGTH
+function sortByLength(array) {
+    return array.sort((a, b) => a.length - b.length)
+};
