@@ -456,5 +456,12 @@ function finalGrade(exam, projects) {
     } else {
         return 0
     }
+}
+
+//KEEP HYDRATED
+function litres(time) {
+    let nathan = time * 0.5
+
+    return Math.floor(nathan)
 
 }
