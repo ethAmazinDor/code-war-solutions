@@ -484,3 +484,12 @@ function arithmetic(a, b, operator) {
 function sortByLength(array) {
     return array.sort((a, b) => a.length - b.length)
 };
+
+//SUM THE STRINGS
+function sumStr(a, b) {
+    let number1 = Number(a)
+    let number2 = Number(b)
+
+    return (number1 + number2).toString()
+
+}
