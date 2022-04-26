@@ -534,4 +534,11 @@ var stringToNumber = function (str) {
     return Number(str)
 }
 
+//STRING REPEAT 
+function repeatStr(n, s) {
+    return s.repeat(n)
+
+}
+
+
 
