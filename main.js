@@ -498,3 +498,33 @@ function sumStr(a, b) {
 function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
     return laLigaGoals + copaDelReyGoals + championsLeagueGoals
 }
+
+//LIST FILTERING 
+function filter_list(arrs) {
+    //iterate through the array 
+    let newArr = []
+    //get rid of any strings into the array 
+    for (let i = 0; i < arrs.length; i++) {
+        numbers = arrs[i]
+        //return a new array without any strings
+        if (numbers !== '') {
+            newArr.push[i]
+        }
+    }
+    return newArr
+}
+
+//CREDIT CARD MASK
+function maskify(cc) {
+    //iterate through the string 
+
+    cc = cc.split('')
+    //replace all the characters/nubmers with a # exepct the last 4 digits
+    for (let i = 0; i < cc.length - 4; i++) {
+        cc[i] = '#'
+    }
+    cc = cc.join('')
+
+    return cc
+
+}
