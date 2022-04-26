@@ -528,3 +528,10 @@ function maskify(cc) {
     return cc
 
 }
+
+//CONVERT STRING TO A NUMBER 
+var stringToNumber = function (str) {
+    return Number(str)
+}
+
+
