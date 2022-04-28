@@ -560,3 +560,19 @@ function filter_list(l) {
     // Return a new array with the strings filtered out
     return l.filter(str => str !== str.toString())
 }
+
+//Difference of volumes of cuboids 
+function findDifference(a, b) {
+    let volumeA = a.reduce((sum, current) => sum * current, 1)
+    let volumeB = b.reduce((sum, current) => sum * current, 1)
+    let difference = (volumeA - volumeB)
+
+    return Math.abs(difference)
+
+
+}
+
+function findDifference(a, b) {
+    return Math.abs(a.reduce((sum, current) => sum * current, 1) - b.reduce((sum, current) => sum * current, 1))
+
+}
