@@ -581,3 +581,32 @@ function findDifference(a, b) {
 function solution(str, ending) {
     return str.endsWith(ending)
 }
+
+//Exes and Ohs
+function XO(str) {
+    //iterate thorugh the string 
+
+    let xCounter = 0
+    let yCounter = 0
+    //determine if x's and o's are the same amount 
+
+    for (let i = 0; i < str.length; i++) {
+        const counter = str[i].toLowerCase()
+
+        if (counter === 'x') {
+            xCounter++
+        } else if (counter === 'o') {
+            yCounter++
+        }
+    }
+
+    if (xCounter === yCounter) {
+        return true
+    } else {
+        return false
+    }
+}
+
+function XO(str) {
+    return str.toLowerCase().split('x').length === str.toLowerCase().split('o').length;
+}
