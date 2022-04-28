@@ -576,3 +576,8 @@ function findDifference(a, b) {
     return Math.abs(a.reduce((sum, current) => sum * current, 1) - b.reduce((sum, current) => sum * current, 1))
 
 }
+
+//String ends with ?
+function solution(str, ending) {
+    return str.endsWith(ending)
+}
