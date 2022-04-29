@@ -623,3 +623,12 @@ function openOrSenior(data) {
 function reverseWords(str) {
     return str.split("").reverse().join("").split(" ").reverse().join(" ")
 }
+
+//HIGHEST PROFIT WINS
+function minMax(arr) {
+    let newArr = []
+
+    return [Math.min(...arr), Math.max(...arr)]
+
+
+}
