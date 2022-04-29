@@ -610,3 +610,10 @@ function XO(str) {
 function XO(str) {
     return str.toLowerCase().split('x').length === str.toLowerCase().split('o').length;
 }
+
+//Categorize New Member 
+function openOrSenior(data) {
+    // get an array of ages and handicaps 
+    return data.map(([age, handicap]) => (age > 54 && handicap > 7) ? 'Senior' : 'Open')
+    //look through that array and determine 
+}
