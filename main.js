@@ -617,3 +617,9 @@ function openOrSenior(data) {
     return data.map(([age, handicap]) => (age > 54 && handicap > 7) ? 'Senior' : 'Open')
     //look through that array and determine 
 }
+
+
+//REVERSE WORDS 
+function reverseWords(str) {
+    return str.split("").reverse().join("").split(" ").reverse().join(" ")
+}
