@@ -628,7 +628,51 @@ function reverseWords(str) {
 function minMax(arr) {
     let newArr = []
 
-    return [Math.min(...arr), Math.max(...arr)]
+    return [Math.min(...arr), Math.max(...arr)
 
+}
 
+//COUNT OF POSITIVES & SUM OF NEGATIVES
+function countPositivesSumNegatives(input) {
+    var newArr = [];
+    var positiveNumber = 0;
+    var negativeNumber = 0;
+
+    // Validate Input
+    if (input === null || input.length === 0)
+        return newArr;
+
+    // Loop through array of Numbers 
+    for (var i = 0; i < input.length; i++) {
+        if (input[i] == 0)
+            continue;
+
+        // Count positives
+        else if (input[i] > 0)
+            positiveNumber++;
+
+        // Sum negatives
+        else if (input[i] < 0)
+            negativeNumber += input[i];
+
+    }
+
+    // Prepare Output
+    newArr.push(positiveNumber);
+    newArr.push(negativeNumber);
+
+    return newArr;
+}
+
+//TRANSPORTATION ON VACATION
+function rentalCarCost(d) {
+    let rate = d * 40
+
+    if (d >= 3 && d < 7) {
+        return rate - 20
+    } else if (d >= 7) {
+        return rate - 50
+    } else {
+        return rate
+    }
 }
