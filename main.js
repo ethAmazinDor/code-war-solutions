@@ -676,3 +676,12 @@ function rentalCarCost(d) {
         return rate
     }
 }
+
+//IS HE GONNA SURVIVE ???
+function hero(bullets, dragons) {
+    //each dragon dies with two bullets 
+    return bullets >= dragons * 2
+
+    //check wheter the hero has enough bullets 
+
+}
