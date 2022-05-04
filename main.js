@@ -685,3 +685,15 @@ function hero(bullets, dragons) {
     //check wheter the hero has enough bullets 
 
 }
+
+//WILL THERE BE ENOUGH SPACE ?
+function enough(cap, on, wait) {
+    let pass = on + wait
+
+    if (pass > cap) {
+        return pass - cap
+    } else {
+        return '0'
+    }
+}
+
